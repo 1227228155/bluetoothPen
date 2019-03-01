@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/otaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/sdcard/ota_TQL-112-BT-B08.zip"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/otaUpdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OTA UPDATA"/>
+
+
+</LinearLayout>

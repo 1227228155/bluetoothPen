@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="black_overlay">#660000</color>
+    <color name="white">#808080</color>
+    <color name="statusColor">#ffffff</color>
+    <color name="backColor">#fbfbfb</color>
+    <color name="splitColor">#0a0a0a</color>
+
+    <color name="colorTagButtonBg">#6ab0ff</color>
+    <color name="showPageColor">#f9fcff</color>
+    <color name="showDialogColor">#c7cacc</color>
+    <color name="showItemColor">#404040</color>
+
+    <color name="menuTextColor">#2e2165</color>
+
+</resources>

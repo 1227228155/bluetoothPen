@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/flag1"
+        android:icon="@drawable/secstatus"
+        android:title="已连接"
+        android:enabled="false"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/flag2"
+        android:title="未连接"
+        android:icon="@drawable/firststatus"
+        android:enabled="false"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/connect_scan"
+          android:icon="@drawable/firstscan"
+          android:title="连接 "
+          android:showAsAction="ifRoom|withText" />
+    
+        <item android:id="@+id/clear"
+          android:icon="@drawable/secclear"
+          android:title="清除 "
+          android:showAsAction="ifRoom|withText" />
+
+        <item android:id="@+id/color"
+          android:title="颜色"
+          android:icon="@drawable/color"
+          android:showAsAction="ifRoom|withText" >
+           <menu>
+               <item android:id="@+id/color_blue"
+                   android:title="蓝" />
+               <item android:id="@+id/color_green"
+                   android:title="绿" />
+               <item android:id="@+id/color_cyan"
+                   android:title="青" />
+               <item android:id="@+id/color_red"
+                   android:title="红" />
+               <item android:id="@+id/color_magenta"
+                   android:title="品红" />
+               <item android:id="@+id/color_yellow"
+                   android:title="黄" />
+               <item android:id="@+id/color_black"
+                   android:title="黑" />
+            </menu>
+        </item>
+    <item
+        android:id="@+id/width"
+        android:icon="@drawable/line"
+        android:showAsAction="ifRoom|withText"
+        android:title="线宽">
+        <menu>
+            <item
+                android:id="@+id/w1"
+                android:title="1" />
+            <item
+                android:id="@+id/w2"
+                android:title="2" />
+            <item
+                android:id="@+id/w3"
+                android:title="3" />
+            <item
+                android:id="@+id/w4"
+                android:title="4" />
+            <item
+                android:id="@+id/w5"
+                android:title="5" />
+            <item
+                android:id="@+id/w6"
+                android:title="6" />
+        </menu>
+    </item>
+    <item android:id="@+id/replay"
+        android:title="回放"
+        android:icon="@drawable/reply"
+        android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/s1"
+                android:title="1(最快)" />
+            <item android:id="@+id/s2"
+                android:title="2" />
+            <item android:id="@+id/s3"
+                android:title="3" />
+            <item android:id="@+id/s4"
+                android:title="4" />
+            <item android:id="@+id/s5"
+                android:title="5(最慢)" />
+        </menu>
+    </item>
+    <item android:id="@+id/setting"
+        android:title="设置"
+        android:icon="@drawable/setting"
+        android:showAsAction="ifRoom|withText" >
+
+    </item>
+    <item android:id="@+id/offline"
+        android:title="离线"
+        android:icon="@drawable/offline"
+        android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/start"
+                android:title="获取" />
+            <item android:id="@+id/stop"
+                android:title="停止" />
+            <item android:id="@+id/clear_offline"
+                android:title="清除" />
+            <item android:id="@+id/offline_num"
+                android:title="数量" />
+        </menu>
+    </item>
+    <item android:id="@+id/LED"
+        android:title="LED"
+        android:icon="@drawable/offline"
+        android:visible="false"
+        android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/white"
+                android:title="白" />
+            <item android:id="@+id/yellow"
+                android:title="黄" />
+            <item android:id="@+id/magenta"
+                android:title="品红" />
+            <item android:id="@+id/red"
+                android:title="红" />
+            <item android:id="@+id/cyan"
+                android:title="青" />
+            <item android:id="@+id/green"
+                android:title="绿" />
+            <item android:id="@+id/blue"
+                android:title="蓝" />
+        </menu>
+    </item>
+    <item android:id="@+id/size"
+        android:title="纸尺寸"
+        android:visible="false"
+        android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/A5"
+                android:title="A5" />
+            <item android:id="@+id/B5"
+                android:title="B5" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/reset"
+        android:visible="false"
+        android:title="初始化"
+        android:showAsAction="ifRoom|withText" >
+
+    </item>
+
+    <item android:id="@+id/OTA"
+        android:visible="true"
+        android:title="OTA"
+        android:showAsAction="ifRoom|withText" >
+
+    </item>
+
+</menu>

@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key1'
+            keyPassword '123456'
+            storeFile file('C:/TQL/Android/signed.key1.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.sonix.oidbluetooth"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "V1.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                outputFileName = "TQL SmartPen ${defaultConfig.versionName}.apk"
+                //output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/guava-19.0.jar')
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.githang:status-bar-compat:0.7'
+    compile 'com.github.bumptech.glide:glide:4.3.0'
+    compile 'com.android.support:support-annotations:23.4.0'
+    //OTA
+    compile 'no.nordicsemi.android:dfu:1.7.0'
+    implementation files('libs/TQLPenComm_V1.1.6.jar')
+}
+
+repositories {
+    google()
+}
+buildscript {
+    repositories {
+        google()
+    }
+}
